@@ -1,0 +1,29 @@
+{
+  "name": "qyii-nodejs-learn",
+  "version": "1.0.0",
+  "description": "self practice of nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qyii/qyii-nodejs-learn.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "qyii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qyii/qyii-nodejs-learn/issues"
+  },
+  "homepage": "https://github.com/qyii/qyii-nodejs-learn#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1"
+  }
+}
