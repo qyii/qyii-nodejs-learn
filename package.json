@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "npx babel src --out-dir lib",
-    "dev": "node build/server.js"
+    "dev": "node build/dev-server.js"
   },
   "repository": {
     "type": "git",
