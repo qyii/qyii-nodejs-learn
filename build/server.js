@@ -1,7 +1,20 @@
 var http = require('http')
+var url = require('url')
 
-http.createServer(function(request, response) {
-  response.writeHead(200, { 'Content-Type': 'text/plain' })
-  response.write('Hello World')
-  response.end()
-}).listen(9100)
+function start(route, handle) {
+  function onRequest(request, response) {
+    var pathname = url.parse(request.url).pathname
+    // console.log('Request for ' + pathname + ' received.')
+
+    route(handle, pathname)
+    
+    response.writeHead(200, { 'Content-Type': 'text/plain' })
+    response.write('Hello World')
+    response.end()
+  }
+
+  http.createServer(onRequest).listen(9100)
+  console.log('Server has started at http://localhost:9100')
+}
+
+exports.start = start
