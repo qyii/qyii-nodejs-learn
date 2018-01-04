@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx babel src --out-dir lib"
+    "babel": "npx babel src --out-dir lib",
+    "dev": "node config/server.js"
   },
   "repository": {
     "type": "git",
