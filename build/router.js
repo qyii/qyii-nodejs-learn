@@ -1,10 +1,10 @@
-function route(handle, pathname, response, postData) {
+function route(handle, pathname, response, request) {
   // console.log('About to route a request for ' + pathname)
   if (pathname.indexOf('favicon') !== -1) {
     return 'icon'
   }
   if (typeof handle[pathname] === 'function') {
-    return handle[pathname](response, postData)
+    return handle[pathname](response, request)
   } else {
     console.log('404 not found')
     response.writeHead(404, { 'Content-Type': 'text/plain' })
