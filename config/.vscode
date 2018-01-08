@@ -1,0 +1,17 @@
+{
+    "git.confirmSync": false,
+    "git.path": "D:\\Program Files\\Git\\cmd\\git.exe",
+    "window.zoomLevel": 0,
+    "prettier.singleQuote": true,
+    "prettier.semi":false,
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "element-helper.version": "2.0",
+    "workbench.colorTheme": "Sea Green Theme",
+    "workbench.iconTheme": "ayu",
+    "git.autofetch": true,
+    "vetur.validation.template": false,
+    "[vue]": {}
+}
