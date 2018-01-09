@@ -35,6 +35,10 @@ function upload(response, request) {
 
     // 解决跨分区操作的权限问题报错 cross-device link not permitted 采用filestream的形式
     var readStream = fs.createReadStream(files.upload.path)
+    // 查看文件夹是否存在 不存在则创建
+    if (!fs.existsSync('./tmp')) {
+      fs.mkdirSync('./tmp')
+    }
     var writeStream = fs.createWriteStream('./tmp/test.jpg')
     readStream.pipe(writeStream)
     readStream.on('end', function() {
